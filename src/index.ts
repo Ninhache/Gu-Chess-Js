@@ -1,7 +1,8 @@
 import {Board} from "./board";
+import {Canvas} from "./canvas";
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    new Board();
+    new Board().draw(Canvas.getCanvas());
 
 });

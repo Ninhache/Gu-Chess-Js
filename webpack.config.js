@@ -25,5 +25,11 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  devServer: {
+    hot: true,
+    open: true, // Open the browser after server has been started
+    port: 3000, 
+  },
+  watch: true
 };
 

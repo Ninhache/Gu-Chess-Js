@@ -1,7 +1,7 @@
 {
   "scripts": {
     "build": "webpack --mode production",
-    "watch": "webpack --mode development"
+    "watch": "webpack serve --mode development"
   },
   "dependencies": {
     "@types/lodash": "^4.14.202",
@@ -11,6 +11,7 @@
     "html-webpack-plugin": "^5.5.4",
     "ts-loader": "^9.5.1",
     "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
