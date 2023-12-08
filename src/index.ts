@@ -3,6 +3,6 @@ import {Canvas} from "./canvas";
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    new Board().draw(Canvas.getCanvas());
+    new Board().initialDraw(Canvas.getCanvas());
 
 });

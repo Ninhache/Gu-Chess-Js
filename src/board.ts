@@ -1,4 +1,5 @@
 import {parseFEN} from "./utils";
+import {TILE_HEIGHT, TILE_WIDTH} from "./config";
 
 
 export class Board {
@@ -17,25 +18,11 @@ export class Board {
         console.log(board)
     }
 
-    draw(canvas: HTMLCanvasElement) {
-        const tileSize = 64;
+    initialDraw(canvas: HTMLCanvasElement, fen: string = "") {
+        const chessboardElement = document.getElementById('chessboard');
 
-        const context = canvas.getContext("2d");
+        // draw using svg like chess.com
 
-        if (!context) throw new Error(`2D Context cannot be used ${context}`);
-
-
-        for (let i = 0; i < 8; i++) {
-            for (let j = 0; j < 8; j++) {
-                if ((i + j) % 2 == 0) {
-                    context.fillStyle = "white";
-                } else {
-                    context.fillStyle = "black";
-                }
-
-                context.fillRect(i * tileSize, j * tileSize, tileSize, tileSize);
-            }
-        }
     }
 
 }

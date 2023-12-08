@@ -5,12 +5,22 @@
     <title>Gu-Chess-Js</title>
 
     <link rel='stylesheet' type='text/css' media='screen' href='css/canvas.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #chessboard {
+            border: 1px solid #000;
+        }
+    </style>
 
 
-    <script src="dist/bundle.js"></script>
+    <script src="dist/bundle.js" defer></script>
 
 </head>
-<body id="container">
-</body>
+    <body>
+        <div id="chessboard"></div>
+    </body>
 </html>
